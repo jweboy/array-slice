@@ -21,7 +21,7 @@ module.exports = function slice(arr, start, end) {
 };
 
 function idx(len, pos, end) {
-  if (pos == null) {
+  if (pos === null || pos === undefined) {
     pos = end || 0;
   } else if (pos < 0) {
     pos = Math.max(len + pos, 0);
